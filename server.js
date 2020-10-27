@@ -10,7 +10,7 @@ const PORT = 3000
 keystone
   .prepare({
     apps: apps,
-    dev: true//process.env.NODE_ENV !== 'production',
+    dev: process.env.NODE_ENV !== 'production',
   })
   .then(async ({ middlewares }) => {
     await keystone.connect();
