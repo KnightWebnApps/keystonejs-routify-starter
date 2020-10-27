@@ -1,0 +1,27 @@
+{
+  "name": "keystone-routify-starter",
+  "description": "An example KeystoneJS project with a User list and Authentication.  Includes Routify with Apollo.",
+  "version": "5.0.20",
+  "author": "KnightWebnApps",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development DISABLE_LOGGING=true node server.js",
+    "build": "cross-env NODE_ENV=production keystone build",
+    "start": "cross-env NODE_ENV=production keystone start",
+    "create-tables": "cross-env CREATE_TABLES=true keystone create-tables"
+  },
+  "dependencies": {
+    "@keystonejs/adapter-mongoose": "^10.0.0",
+    "@keystonejs/app-admin-ui": "^7.3.8",
+    "@keystonejs/app-graphql": "^6.1.3",
+    "@keystonejs/auth-password": "^5.1.16",
+    "@keystonejs/fields": "^19.0.0",
+    "@keystonejs/keystone": "^17.0.0",
+    "@sveltech/ssr": "0.0.12",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1"
+  }
+}
